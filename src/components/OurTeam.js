@@ -5,16 +5,16 @@ import pic2 from '../images/photos/team/2.jpg'
 import pic3 from '../images/photos/team/3.jpg'
 
 const OurTeam = () => (
-  <section class='section'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-lg-12'>
-          <div class='center-heading'>
-            <h2 class='section-title'>Our Team</h2>
+  <section className='section'>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-lg-12'>
+          <div className='center-heading'>
+            <h2 className='section-title'>Our Team</h2>
           </div>
         </div>
-        <div class='offset-lg-3 col-lg-6'>
-          <div class='center-text'>
+        <div className='offset-lg-3 col-lg-6'>
+          <div className='center-text'>
             <p>
               Donec vulputate urna sed rutrum venenatis. Cras consequat magna
               quis arcu elementum, quis congue risus.
@@ -23,30 +23,30 @@ const OurTeam = () => (
         </div>
       </div>
 
-      <div class='row'>
-        <div class='col-lg-4 col-md-6 col-sm-12'>
-          <div class='person-item'>
-            <div class='img'>
+      <div className='row'>
+        <div className='col-lg-4 col-md-6 col-sm-12'>
+          <div className='person-item'>
+            <div className='img'>
               <img src={pic1} alt='' />
             </div>
-            <div class='content'>
-              <div class='text'>
-                <h5 class='user-name'>Vlad Danciu</h5>
+            <div className='content'>
+              <div className='text'>
+                <h5 className='user-name'>Vlad Danciu</h5>
                 <span>President & CEO</span>
-                <ul class='social'>
+                <ul className='social'>
                   <li>
                     <a href='#'>
-                      <i class='fa fa-linkedin'></i>
+                      <i className='fa fa-linkedin'></i>
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i class='fa fa-twitter'></i>
+                      <i className='fa fa-twitter'></i>
                     </a>
                   </li>
                   <li>
                     <a href='#'>
-                      <i class='fa fa-envelope'></i>
+                      <i className='fa fa-envelope'></i>
                     </a>
                   </li>
                 </ul>
@@ -55,7 +55,7 @@ const OurTeam = () => (
           </div>
         </div>
 
-        <div class='col-lg-4 col-md-6 col-sm-12'>
+        <div className='col-lg-4 col-md-6 col-sm-12'>
           <div class='person-item active'>
             <div class='img'>
               <img src={pic2} alt='' />

@@ -9,19 +9,21 @@ import {
   FrequentQuestions,
   Parallex,
   OurTeam,
+  ImageTwoForParallax,
   Footer,
 } from '../components'
 const IndexPage = () => (
   <React.Fragment>
     <Header />
     <WelcomeSection />
+    <Parallex />
     <HomeSection />
     <FeaturesSection />
     <Parallex />
     <NewFeatures />
     <CounterSection />
     <FrequentQuestions />
-    <Parallex />
+    <ImageTwoForParallax />
     <OurTeam />
     <Footer />
   </React.Fragment>

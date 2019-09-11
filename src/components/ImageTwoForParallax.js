@@ -2,14 +2,10 @@ import React, { Component } from 'react'
 
 import paralaxImageOne from '../images/photos/parallax/parallax-1.jpg'
 
-const Parallex = () => (
-  <section class='half-parallax'>
+const ImageTwoForParallax = () => (
+  <section class='half-parallax padding-bottom-120'>
     <div class='parallax-image'>
-      <img
-        src={paralaxImageOne}
-        class='img-fluid float-right'
-        alt='Title'
-      ></img>
+      <img src={paralaxImageOne} />
     </div>
     <div class='parallax-items'>
       <div class='container'>
@@ -19,4 +15,4 @@ const Parallex = () => (
   </section>
 )
 
-export default Parallex
+export default ImageTwoForParallax
