@@ -1,12 +1,29 @@
 import React from 'react'
-import { Header, WelcomeSection } from '../components'
+import {
+  Header,
+  WelcomeSection,
+  HomeSection,
+  FeaturesSection,
+  NewFeatures,
+  CounterSection,
+  FrequentQuestions,
+  Parallex,
+  OurTeam,
+  Footer,
+} from '../components'
 const IndexPage = () => (
   <React.Fragment>
-    {/* <div className="preloader-wrapper">
-      <div className="loader"></div>
-    </div> */}
     <Header />
     <WelcomeSection />
+    <HomeSection />
+    <FeaturesSection />
+    <Parallex />
+    <NewFeatures />
+    <CounterSection />
+    <FrequentQuestions />
+    <Parallex />
+    <OurTeam />
+    <Footer />
   </React.Fragment>
 )
 
