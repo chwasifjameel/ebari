@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
+import backImage from '../images/photos/parallax/parallax-2.jpg'
 
 const CounterSection = () => (
-  <section className='parallax-counter'>
+  <section
+    className='parallax-counter'
+    style={{
+      backgroundImage: `url(${backImage})`,
+    }}
+  >
     <div className='parallax-content'>
       <div className='container'>
         <div className='row'>

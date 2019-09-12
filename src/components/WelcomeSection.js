@@ -6,7 +6,7 @@ import Welcome4 from '../images/photos/welcome/4.jpg'
 import Welcome5 from '../images/photos/welcome/5.jpg'
 
 const Welcome = () => (
-  <div className='welcome'>
+  <div className='welcome' style={{ height: '789px' }}>
     <div className='welcome-content'>
       <div className='container'>
         <div className='row'>

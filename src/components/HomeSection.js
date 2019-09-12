@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
+import paralaxImageOne from '../images/photos/parallax/parallax-1.jpg'
 
 const HomeSection = () => (
   <section className='half-parallax'>
-    <div className='parallax-image'></div>
+    <div
+      className='parallax-image'
+      style={{
+        backgroundImage: `url(${paralaxImageOne})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+      }}
+    ></div>
     <div className='parallax-items'>
       <div className='container'>
         <div className='row'>
