@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ebri-theme-gatsby",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A static Gatsby website for your business",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Wasif Jameel <wasif.jameel1@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.15.14",
@@ -24,7 +24,6 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-in-viewport": "^1.0.0-alpha.9",
-    "react-owl-carousel2": "^0.3.0",
     "react-parallax": "^2.2.1"
   },
   "devDependencies": {
