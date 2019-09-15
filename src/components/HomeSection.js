@@ -1,16 +1,34 @@
 import React, { Component } from 'react'
+import { Parallax } from 'react-parallax';
 import paralaxImageOne from '../images/photos/parallax/parallax-1.jpg'
+
+const insideStyles = {
+  background: "white",
+  padding: 20,
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)"
+};
 
 const HomeSection = () => (
   <section className='half-parallax'>
-    <div
+    <Parallax className='parallax-image' bgImage={paralaxImageOne} strength={900}
+      style={{
+        height: 400,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+      }}>
+    </Parallax>
+
+    {/* <div
       className='parallax-image'
       style={{
         backgroundImage: `url(${paralaxImageOne})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
       }}
-    ></div>
+    ></div> */}
     <div className='parallax-items'>
       <div className='container'>
         <div className='row'>

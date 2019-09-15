@@ -673,6 +673,11 @@ welcome
   bottom: -0px;
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+  justify-content: flex-end;
+  padding-bottom: 4%;
 }
 
 .welcome .welcome-content .slider-wrapper .base .prev {
@@ -735,11 +740,11 @@ welcome
   opacity: 1;
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   .welcome .welcome-content {
     margin-top: 100px;
   }
-}
+} */
 
 @media (max-width: 1200px) {
   .welcome {
@@ -1239,6 +1244,21 @@ parallax
 }
 
 .parallax-counter .parallax-content .count-item strong {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 1.72px;
+  margin-bottom: 10px;
+  color: #fff;
+  margin-top: 70px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.parallax-counter .parallax-content .count-item strong > span {
   display: block;
   text-align: center;
   font-weight: 400;
@@ -3111,6 +3131,55 @@ preloader
   margin-bottom: 35px;
 }
 
+.react-parallax-content {
+  position: unset !important;
+}
+
+.slider-list {
+  text-align: center;
+}
+
+.slider-slide.slide-visible {
+  height: none !important;
+  width: 200px !important;
+}
+
+.slider-control-centerleft {
+  display: none !important;
+}
+
+.slider-control-centerright {
+  display: none !important;
+}
+
+.slider-control-bottomcenter {
+  display: none !important;
+}
+
+.slider-control-bottomleft > button {
+  background: none;
+  border: none;
+  font-size: 45px;
+}
+
+.slider-control-bottomright > button {
+  background: none;
+  border: none;
+  font-size: 45px;
+}
+
+.slider-control-bottomleft {
+  left: 320px !important;
+}
+
+.slider-control-bottomright {
+  right: 400px !important;
+}
+
+.slider-slide.slide-visible > img {
+  width: 170%;
+}
+
 @media (max-width: 767px) {
   #tabs {
     margin: 0 15px;
@@ -3143,5 +3212,14 @@ preloader
 
   #tabs .tab-content .blue-divider {
     margin: 0 0 0 0;
+  }
+
+  .slider-wrapper {
+    left: 0 !important;
+    top: 400px !important;
+  }
+
+  .welcome {
+    height: 1200px !important;
   }
 }

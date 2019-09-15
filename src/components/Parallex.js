@@ -4,7 +4,7 @@ import paralaxImageOne from '../images/photos/parallax/parallax-1.jpg'
 
 const Parallex = () => (
   <section
-    class='parallax-image'
+    className='parallax-image'
     style={{
       backgroundImage: `url(${paralaxImageOne})`,
       backgroundSize: 'cover',

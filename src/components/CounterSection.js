@@ -1,29 +1,45 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Parallax } from 'react-parallax';
 import backImage from '../images/photos/parallax/parallax-2.jpg'
-
-const CounterSection = () => (
-  <section
-    className='parallax-counter'
+import CountUp from 'react-countup';
+let isVisited = false;
+const CounterSection = ({ inViewport: isVisible, forwardedRef }) => {
+  isVisited = isVisited ? isVisited : isVisible;
+  let shouldRender = isVisible || isVisited;
+  return <Parallax ref={forwardedRef} className='parallax-counter parallax-image' bgImage={backImage} strength={900}
     style={{
-      backgroundImage: `url(${backImage})`,
-    }}
-  >
+      height: 300,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+    }}>
     <div className='parallax-content'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className='count-item'>
-              <strong>96</strong>
+              <strong>
+                {shouldRender && <CountUp
+                  start={0}
+                  end={96}
+                  duration={5}>
+                </CountUp>}
+              </strong>
               <span>
                 Active
                 <br />
-                Customer
+                Customers
               </span>
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className='count-item'>
-              <strong>190</strong>
+              <strong>
+                {shouldRender && <CountUp
+                  start={0}
+                  end={190}
+                  duration={5}>
+                </CountUp>}
+              </strong>
               <span>
                 Specialist
                 <br />
@@ -33,28 +49,40 @@ const CounterSection = () => (
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className='count-item'>
-              <strong>193</strong>
+              <strong>
+                {shouldRender && <CountUp
+                  start={0}
+                  end={193}
+                  duration={5}>
+                </CountUp>}
+              </strong>
               <span>
-                Complated
+                Completed
                 <br />
-                Project
+                Projects
               </span>
             </div>
           </div>
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className='count-item'>
-              <strong>12</strong>
+              <strong>
+                {shouldRender && <CountUp
+                  start={0}
+                  end={12}
+                  duration={5}>
+                </CountUp>}
+              </strong>
               <span>
                 Ongoing
                 <br />
-                Project
+                Projects
               </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-)
+  </Parallax>
+}
 
 export default CounterSection

@@ -15,12 +15,17 @@
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-transformer-sharp": "^2.2.14",
     "jquery": "^3.4.1",
+    "nuka-carousel": "^4.5.12",
     "popper.js": "^1.15.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-content-tabs": "^2.0.0",
+    "react-countup": "^4.2.2",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-in-viewport": "^1.0.0-alpha.9",
+    "react-owl-carousel2": "^0.3.0",
+    "react-parallax": "^2.2.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

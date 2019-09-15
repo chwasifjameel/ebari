@@ -1,4 +1,5 @@
 import React from 'react'
+import handleViewport from 'react-in-viewport';
 
 import {
   Header,
@@ -13,6 +14,11 @@ import {
   ImageTwoForParallax,
   Footer,
 } from '../components'
+
+import OwlCarousel from 'react-owl-carousel2';
+
+const ViewportCounterSection = handleViewport(CounterSection);
+
 const IndexPage = () => (
   <React.Fragment>
     <Header />
@@ -20,9 +26,10 @@ const IndexPage = () => (
     <Parallex />
     <HomeSection />
     <FeaturesSection />
-    <Parallex />
+    <ImageTwoForParallax />
     <NewFeatures />
-    <CounterSection />
+    {/* <CounterSection /> */}
+    <ViewportCounterSection onEnterViewport={() => console.log('enter')} onLeaveViewport={() => console.log('leave')} />
     <FrequentQuestions />
     <ImageTwoForParallax />
     <OurTeam />
