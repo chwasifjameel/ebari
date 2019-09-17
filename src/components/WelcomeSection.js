@@ -8,6 +8,7 @@ import Welcome5 from '../images/photos/welcome/5.jpg'
 
 function Welcome() {
   const [currentIndex, setIndex] = useState(0)
+  // All images with title and description
   const carouselData = [
     {
       img: Welcome1,
@@ -35,8 +36,6 @@ function Welcome() {
       description: 'Mauris sagittis feugiat dui vel varius.',
     },
   ]
-  console.log('welccome1', carouselData)
-
   return (
     <div className='welcome' style={{ height: '789px' }}>
       <div className='welcome-content'>
@@ -75,10 +74,12 @@ function Welcome() {
             <h5>{carouselData[currentIndex].title}</h5>
             <p>{carouselData[currentIndex].description}</p>
           </div>
+          {/* Actual Carousel */}
           <Carousel
             slidesToShow={2}
             wrapAround={true}
             afterSlide={currentIndex => setIndex(currentIndex)}
+            // Custom button left
             renderBottomLeftControls={({ previousSlide }) => (
               <button onClick={previousSlide}>
                 <div className='prev'>
@@ -86,6 +87,7 @@ function Welcome() {
                 </div>
               </button>
             )}
+            // Custom button right
             renderBottomRightControls={({ nextSlide }) => (
               <button onClick={nextSlide}>
                 <div className='next'>
@@ -94,6 +96,7 @@ function Welcome() {
               </button>
             )}
           >
+            {/* Atual images for carousel */}
             {carouselData.map(({ img }, index) => (
               <img key={index} src={img} />
             ))}

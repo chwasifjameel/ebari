@@ -15,6 +15,7 @@ import {
   Footer,
 } from '../components'
 
+// Setting init for animation
 const ViewportCounterSection = handleViewport(CounterSection)
 
 const IndexPage = () => (
@@ -26,11 +27,8 @@ const IndexPage = () => (
     <FeaturesSection />
     <ImageTwoForParallax />
     <NewFeatures />
-    {/* <CounterSection /> */}
-    <ViewportCounterSection
-      onEnterViewport={() => console.log('enter')}
-      onLeaveViewport={() => console.log('leave')}
-    />
+    {/* To create an animation for numbers */}
+    <ViewportCounterSection />
     <FrequentQuestions />
     <ImageTwoForParallax />
     <OurTeam />

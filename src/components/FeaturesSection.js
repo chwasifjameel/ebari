@@ -14,7 +14,7 @@ const FeaturesSection = () => (
           <div className='left-text'>
             <p className='dark'>
               Etiam eu felis condimentum, lacinia lorem eget, dictum nisl.
-              Vestibulum lacinia erat at.{' '}
+              Vestibulum lacinia erat at.
             </p>
             <p className='margin-bottom-40'>
               To make Space Intelligence real we help organisations work out
