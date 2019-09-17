@@ -72,8 +72,8 @@ function Welcome() {
           }}
         >
           <div className='base'>
-            <h2>{carouselData[currentIndex].title}</h2>
-            <h6>{carouselData[currentIndex].description}</h6>
+            <h5>{carouselData[currentIndex].title}</h5>
+            <p>{carouselData[currentIndex].description}</p>
           </div>
           <Carousel
             slidesToShow={2}
